@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="./style.css" />
+  <body>
+    <h2>JavaScript Variables</h2>
+
+    <p>In this example, x, y, and z are variables.</p>
+
+    <p id="demo"></p>
+
+    <p>
+      A <span id="1"></span> instrução permite que você declare uma constante, o
+      valor não pode ser <span id="2"></span>
+    </p>
+
+    <p>
+      A <span id="3"></span> instrução permite que você declare uma variável, o
+      valor pode ser <span id="4"></span>
+    </p>
+
+    <p>meu aniversário é:</p>
+    <span id="aniversário"></span>
+
+    <p>Eu tenho <span id="idade"></span> anos de idade</p>
+
+    <p>
+      Metade da minha idade é <span id="5"></span>.
+      O dobro da minha idade é <span id="6"></span>.
+      Em <span id="7"></span> anos estarei <span id="8"></span>.
+    </p>
+
+    <p>Quanto você pagou <span id="9"></span></p>
+
+    <h2>Tipos de dados</h2>
+    <h3>Escrever funções javascript no script, identificar os tipos de dados</h3>
+    <p>isto é um: 5 <span id="10"></span></p>
+    <p>isto é um: computador <span id="11"></span></p>
+    <p>isto é um: true o false <span id="12"></span></p>
+    <p>isto é um: undefined <span id="13"></span></p>
+    <p>isto é um: null <span id="14"></span></p>
+    <p>isto é um: [8,9,34,21] o ['nome', 'mulher', 'casa', 'amigo']<span id="15"></span></p>
+    <p>isto é um: {'mes': 10, 'dia': 5, 'ano': 2000}<span id="16"></span></p>
+
+    <h2>Scope</h2>
+    <p>Global Scope</p>
+    <p>Escopo global - uma variável com escopo global pode ser acessada de qualquer parte do código JavaScript.</p>
+
+    <p>Local Scope</p>
+    <p>Escopo local - uma variável com escopo local pode ser acessada de dentro de uma função onde é declarada.</p>
+
+    <p>let num = 100;
+        <br>
+        function numbers(){
+            <br>
+            let num2 = 50
+            <br>
+            console.log(num, num2)
+            <br>
+        }
+    </p>
+
+    <p>num is in the <span id="17"></span></p></p>
+    <p>num2 is in the <span id="18"></span></p></p>
+
+    <h2>Hoisting</h2>
+    <p>Em JavaScript, uma variável pode ser declarada após ter sido usada.
+        <br>
+        Em outras palavras; uma variável pode ser usada antes de ser declarada.</p>
+    <p><span id="17"></span></p></p>
+
+    
+
+ 
+
+
+    <script>
+      let x = 5;
+      let y = 6;
+      let z = x + y;
+      document.getElementById("demo").innerHTML = "The value of z is: " + z;
+
+      const one = "...";
+      const two = "...";
+      document.getElementById("1").innerHTML = one;
+      document.getElementById("2").innerHTML = two;
+
+      const three = "...";
+      const four = "...";
+      document.getElementById("3").innerHTML = three;
+      document.getElementById("4").innerHTML = four;
+
+      const dia = 0;
+      const mês = 0;
+      const ano = 0;
+      document.getElementById("aniversário").innerHTML =
+        dia + "/" + mês + "/" + ano;
+
+      const idade = 0;
+      document.getElementById("idade").innerHTML = idade;
+      
+      // mude as variáveis com +,-,/,*
+      const metade = idade ;
+      const dobro = idade ;
+      const seven = 5;
+      const eight = idade;
+      document.getElementById("5").innerHTML = metade;
+      document.getElementById("6").innerHTML = dobro;
+      document.getElementById("7").innerHTML = seven;
+      document.getElementById("8").innerHTML = eight;
+
+      const frango = 10;
+      const arroz = 3;
+      const feijão = 4;
+      const bebida = 8;
+      const salada = 5;
+      const desconto = 4;
+      // adicionar e subtrair com variáveis
+      const total = '...'
+      document.getElementById("9").innerHTML = total;
+
+      //complete 10 - 16 aqui
+
+
+    </script>
+  </body>
+</html>
