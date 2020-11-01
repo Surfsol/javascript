@@ -65,12 +65,13 @@
     <h2>Hoisting</h2>
     <p>Em JavaScript, uma variável pode ser declarada após ter sido usada.
         <br>
-        Em outras palavras; uma variável pode ser usada antes de ser declarada.</p>
-    <p><span id="17"></span></p></p>
-
+    Em outras palavras; uma variável pode ser usada antes de ser declarada.</p>
     
+    <img src="./assets/hoisting.png">
 
- 
+    <p>Qual mais caro? <span id="19"></span></p>
+
+    <p>Show me the price of bananas? <span id="24"></span></p>
 
 
     <script>
@@ -108,12 +109,12 @@
       document.getElementById("7").innerHTML = seven;
       document.getElementById("8").innerHTML = eight;
 
-      const frango = 10;
-      const arroz = 3;
-      const feijão = 4;
-      const bebida = 8;
-      const salada = 5;
-      const desconto = 4;
+      const iphone = 8000;
+      const Mac_Book = 24000;
+      const flash_drive = 40;
+      const bateria = 80;
+      const camera = 500;
+      const desconto = 400;
       // adicionar e subtrair com variáveis
       const total = '...'
       document.getElementById("9").innerHTML = total;
@@ -121,6 +122,67 @@
       //complete 10 - 16 aqui
 
 
+      //functions
+      // example
+    const caro = () => {
+      if (iphone > Mac_Book){
+         return'iphone mais caro'
+      } else {
+          return 'Mac Book Pro mais caro'
+      }
+    }
+    document.getElementById('19').innerHTML = caro();
+
+    // numero 20
+    //escreva uma função, se a câmera for inferior a 450,
+    // diga 'Compre a câmera'; se for maior, diga 'Não compre'
+
+    // numero 21
+    //escreva uma função, se você obtiver um desconto,
+    // diga 'Sim, há um desconto, é (quantidade de desconto)', se não, diga 'Sem desconto'
+
+    // numero 22
+    //escreva uma função, se você obtiver um desconto,
+    // diga 'Sim, há um desconto, é (quantidade de desconto)', se não, diga 'Sem desconto'
+
+    // numero 23
+    //calcula o preço do iphone, câmera e pen drive. se o preço total for maior do que
+    // o Mac Book, responda 'Eles custam (valor) mais do que o mac book', se for menor,
+    // responda 'Eles custam (valor) menos que o mac book.'
+
+    //switch statement
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
+  const priceOfFruit = (fruta) => {
+        switch (fruta) {
+    case 'Oranges':
+        return('Oranges are $0.59 a pound.');
+        break;
+    case 'Apples':
+        return('Apples are $0.32 a pound.');
+        break;
+    case 'Bananas':
+        return('Bananas are $0.48 a pound.');
+        break;
+    case 'Cherries':
+        return('Cherries are $3.00 a pound.');
+        break;
+    case 'Mangoes':
+        return('Mangoes are $0.56 a pound.');
+        break;
+    case 'Papayas':
+        return('Mangoes and papayas are $2.79 a pound.');
+        break;
+    default:
+    return(`Sorry, we are out of ${fruittype}.`);
+    }
+  }
+
+  document.getElementById('24').innerHTML = priceOfFruit('Bananas');
+
+  //escreva sua própria declaração de switch
+
+
+   
     </script>
   </body>
 </html>
